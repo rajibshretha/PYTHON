@@ -43,22 +43,34 @@
    
 # # p2
 
-import random
-def game():
-    print("youre playing the game...")
-    score=random.randint(1,99)
+# import random
+# def game():
+#     print("youre playing the game...")
+#     score=random.randint(1,99)
     
-    with open("file6.txt","r") as f:
+#     with open("file6.txt","r") as f:
         
-        hiscore=f.read()
-        if(hiscore!=""):
-            hiscore=int(hiscore)
-        else:
-            hiscore=0
-    if(score>hiscore):
-        with open("file6.txt" , "w") as s:
-            s.write(str(score))
-            print("new highscore")
-    return score
+#         hiscore=f.read()
+#         if(hiscore!=""):
+#             hiscore=int(hiscore)
+#         else:
+#             hiscore=0
+#     if(score>hiscore):
+#         with open("file6.txt" , "w") as s:
+#             s.write(str(score))
+       
+#     return score
             
-print(game())
+# print(game())
+
+# p3
+
+def generatetable(n):
+    table=""
+    for i in range (1,11):
+        table += f"{n}*{i}={n*i}\n"
+    with open(f"table_{n}" ,"w") as f:
+        f.write(table)
+    
+for i in range(1,5):
+    generatetable(i)
