@@ -41,7 +41,7 @@ lang={
     "bhai":"brother",
     "behen":"sister"
 }
-word=input("enter the word you want meaning of : ")
+word=input("enter the word you want meaning of :: ")
 print(lang[word])
 
 # # p2
