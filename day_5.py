@@ -1,7 +1,7 @@
 # function
 
 a=int(input("Enter a number "))
-b=int(input("Enter a number "))
+b=int(input("Enter a number : "))
 def sum(a,b):
     print(a+b)
 sum(a,b)
